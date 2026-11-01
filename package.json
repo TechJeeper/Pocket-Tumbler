@@ -1,0 +1,37 @@
+{
+  "name": "pocket-tumbler",
+  "author": "caffeinegamer",
+  "version": "1.0.0",
+  "keywords": ["pebble-app", "game", "idle", "health", "imu", "rock", "gem"],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.1.0"
+  },
+  "pebble": {
+    "displayName": "Pocket Tumbler",
+    "uuid": "c1c45790-89ad-4321-85f5-d18bc4a142e6",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": ["emery", "basalt", "diorite", "flint"],
+    "watchapp": {
+      "watchface": false
+    },
+    "capabilities": ["configurable", "health"],
+    "messageKeys": [
+      "WeeklyGoal",
+      "WeeksToGem",
+      "ShakeBonus",
+      "Vibe"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        }
+      ]
+    }
+  }
+}
